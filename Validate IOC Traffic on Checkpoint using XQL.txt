@@ -1,0 +1,42 @@
+dataset = check_point_vpn_1_firewall_1_raw // choose your checkpoint firewall 
+
+| filter src = "162.243.151.41" //Extenral to Internal (src - IOC IP)
+
+//| filter dst = "162.243.150.40" //Internal to External (dst - IOC IP)
+
+| fields src, dst, act, _time , *
+
+| sort desc _time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
